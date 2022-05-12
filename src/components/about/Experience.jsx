@@ -2,25 +2,29 @@ import React from "react";
 
 const experienceContent = [
   {
-    year: "   2018 - Present",
-    position: " Web Developer",
-    compnayName: "Envato",
-    details: `  Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore
-        adipisicing elit`,
+    year: "Feb 2022 - May 2022",
+    position: "Digital strategist",
+    compnayName: "Extra Income Tips",
+    details: `Sales funnel design and implementation, landing page development and backend integration with CRMs and email marketing systems, Google tag manager and Google analytics. 
+    Also, managing lead generation campaigns across social media channels.`,
   },
   {
-    year: "2013 - 2018",
-    position: " UI/UX Designer",
-    compnayName: "Themeforest",
-    details: `Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol
-        elit, tempor incididunt`,
+    year: "Jan 2022 - Mar 2022",
+    position: "Digital Strategist and Social media manager",
+    compnayName: "Immigration Hub",
+    details: `Designing and developing inbound strategies, setting up sales funnel and also, managing lead generation campaign across social media channels.`,
   },
   {
-    year: "2005 - 2013",
-    position: "Consultant",
-    compnayName: "Videohive",
-    details: `Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur
-        elit, sed do eiusmod tempor duntt`,
+    year: "Oct 2021 - Oct 2021",
+    position: " Social media manager",
+    compnayName: "Starkids",
+    details: `Planning and executing lead generation campaigns across social media channels, performing audience research and engaging leads to boost conversion.`,
+  },
+  {
+    year: "   Aug 2020 - Oct 2021",
+    position: " Digital marketer",
+    compnayName: "Chaze Digital",
+    details: `  Developing landing pages and creating SEO-optimised web copies, tracking and analyzing marketing data, and also managing website backend.`,
   },
 ];
 

@@ -11,12 +11,6 @@ import ModalSevenContent from "./modal/ModalSevenContent";
 import ModalEightContent from "./modal/ModalEightContent";
 import ModalNineContent from "./modal/ModalNineContent";
 
-{/*Test This Tab*/}
-
-import Achievements from "about/Achievements";
-import Education from "about/Education";
-import Experience from "about/Experience";
-import PersonalInfo from "about/PersonalInfo";
 
 const Portfolio = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -96,7 +90,6 @@ const Portfolio = () => {
                   {/* End close icon */}
 
                   <div className="box_inner portfolio">
-                    <Education />
                     <ModalOneContent />
                   </div>
                 </div>

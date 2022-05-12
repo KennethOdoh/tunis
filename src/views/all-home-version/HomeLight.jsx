@@ -3,18 +3,16 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Hero from "../../components/hero/HeroLight";
 import Index from "../../components/about/index";
 import Address from "../../components/Address";
-import Portfolio from "../../components/portfolio/PortfolioLight";
-import Blog from "../../components/blog/BlogLight";
 import Contact from "../../components/Contact";
 import Social from "../../components/Social";
 import AnimatedCursor from "react-animated-cursor";
+import Preview from "../Preview";
 
 const menuItem = [
   { icon: "fa-home", menuName: "Home" },
+  { icon: "fa-briefcase", menuName: "Projects" },
   { icon: "fa-user", menuName: "About" },
-  { icon: "fa-briefcase", menuName: "Portfolio" },
   { icon: "fa-envelope-open", menuName: "Contact" },
-  { icon: "fa-comments", menuName: "Blog" },
 ];
 
 const HomeLight = () => {
@@ -23,7 +21,7 @@ const HomeLight = () => {
   return (
     <div className="green">
       <div className="demo-sticker">
-        <a href="/home-dark">
+        <a href="/">
           <i className="fa fa-moon-o" aria-hidden="true"></i>
         </a>
       </div>
@@ -62,6 +60,19 @@ const HomeLight = () => {
           </TabPanel>
           {/* Hero Content Ends */}
 
+          {/* Projects Content Starts */}
+          <TabPanel className="projects ">
+            <div
+              className="container-fluid main-container container-home p-0 "
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
+              <div className="color-block d-none d-lg-block"></div>
+              <Preview />
+            </div>
+          </TabPanel>
+          {/* Projects Content Ends */}
+
           {/* About Content Starts */}
           <TabPanel className="about">
             <div data-aos="fade-up" data-aos-duration="1200">
@@ -77,30 +88,6 @@ const HomeLight = () => {
           </TabPanel>
           {/* About Content Ends */}
 
-          {/* Portfolio Content Starts */}
-          <TabPanel className="portfolio">
-            <div
-              className="title-section text-left text-sm-center"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-            >
-              <h1>
-                my <span>portfolio</span>
-              </h1>
-              <span className="title-bg">works</span>
-            </div>
-            {/* End title */}
-            <div
-              className="container grid-gallery main-content"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-              data-aos-delay="100"
-            >
-              <Portfolio />
-            </div>
-            {/* End grid gallery */}
-          </TabPanel>
-          {/* Portfolio Content Ends */}
 
           {/* Contact Content Starts */}
           <TabPanel className="contact">
@@ -147,30 +134,6 @@ const HomeLight = () => {
           {/* Contact Content Ends */}
 
           {/* Blog Content Starts */}
-          <TabPanel className="blog">
-            <div
-              className="title-section text-left text-sm-center "
-              data-aos="fade-up"
-              data-aos-duration="1200"
-            >
-              <h1>
-                my <span>blog</span>
-              </h1>
-              <span className="title-bg">posts</span>
-            </div>
-            <div
-              className="container"
-              data-aos="fade-up"
-              data-aos-duration="1200"
-            >
-              {/*  Articles Starts  */}
-              <div className="row pb-50">
-                <Blog />
-              </div>
-              {/* Articles Ends */}
-            </div>
-          </TabPanel>
-          {/* Blog Content Ends */}
         </div>
       </Tabs>
     </div>

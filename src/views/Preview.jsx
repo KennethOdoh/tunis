@@ -3,16 +3,18 @@ import { Link } from "react-router-dom";
 
 const previewDemo = [
   {
-    img: "dark",
+    img: "immigration-hub-casestudy",
     title: "Immigration Hub",
-    routerPath: "/home-dark",
+    description: "Setting up an inbound marketing strategy for a travels & immigration brand",
+    routerPath: "https://casestudies.kennethodoh.digital/immigration-hub",
     delayAnimation: "50",
   },
   {
     img: "light",
-    title: "Light Demo (Classic Portfolio)",
-    routerPath: "/home-light",
-    delayAnimation: "",
+    title: "Extra Income Tips",
+    description: "How I worked with Extra Income tips to scale up their affiliate brand through funnels and process automation",
+    routerPath: "https://casestudies.kennethodoh.digital/extra-income-tips",
+    delayAnimation: "50",
   },
 ];
 
@@ -22,7 +24,7 @@ const Preview = () => {
       <section className="banner text-center">
         <div className="content">
           <h1>Case studies</h1>
-          <h2>A review of some selected projects</h2>
+          <h2>A review of some of my projects</h2>
         </div>
       </section>
       {/* End .banner */}
@@ -40,15 +42,16 @@ const Preview = () => {
               >
                 <div className="content text-center">
                   <div className="bg_container">
-                    <Link to={val.routerPath} target="_blank" rel="noreferrer">
+                    <a href={`${val.routerPath}`} target="_blank" rel="noreferrer">
                       <img
                         src={`img/intro/${val.img}.jpg`}
                         alt="demo"
                         className="img-responsive screenshot"
                       />
-                    </Link>
+                    </a>
                   </div>
                   <h2>{val.title}</h2>
+                  <p>{`${val.description}`}</p>
                   <div className="anchor">
                     <h6>
                       <Link
@@ -57,7 +60,7 @@ const Preview = () => {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        view demo
+                        view project
                       </Link>
                     </h6>
                   </div>
@@ -72,13 +75,11 @@ const Preview = () => {
       <footer>
         <div className="go_purchase">
           <h6 data-aos="fade-up" data-aos-duration="1200">
-            You are at the right step now
+            Liked what you saw?
           </h6>
           <h3 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
-            Purchase Tunis & Build Your Super Fast{" "}
-            <span className="theme-color">React</span> &amp;{" "}
-            <span className="theme-color">Bootstrap 5 </span> Based Portfolio
-            Template.
+          I am always open to discussing new projects{" "}
+            <span className="theme-color">and</span> opportunities to be part of your visions.
           </h3>
           <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
             <a
@@ -87,25 +88,16 @@ const Preview = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <span className="button-text"> Purchase Now</span>
+              <span className="button-text"> contact me</span>
               <span className="button-icon fa fa-arrow-right"></span>
             </a>
           </div>
         </div>
         {/* End go_purchase */}
-
         <div className="text-center footer_copyright">
-          <h6>Tunis - Personal Portfolio React Template</h6>
           <h5>
-            &copy; {new Date().getFullYear()} Designed with{" "}
-            <span className="heart">&#10084;</span> by{" "}
-            <a
-              href="https://themeforest.net/user/ib-themes"
-              target="_blank"
-              rel="noreferrer"
-            >
-              ib-themes.
-            </a>{" "}
+            &copy; {new Date().getFullYear()} {" "}
+              Kenneth Odoh
           </h5>
         </div>
       </footer>

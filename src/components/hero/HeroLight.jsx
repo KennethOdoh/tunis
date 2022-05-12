@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import Index from "../about/index";
+import { Link } from "react-router-dom";
+import previewDemo from "../../views/Preview";
 
 const heroContent = {
   heroImage: "img/hero/light.jpg",
   heroMobileImage: "img-mobile-light",
-  heroTitleName: "lucy milner",
-  heroDesignation: "web designer",
+  heroTitleName: "Kenneth Odoh",
+  heroDesignation: "Digital marketing Engineer",
   heroDescriptions: `I help brands develop successful online strategies and manage profitable marketing campaigns.`,
   heroBtn: "View selected projects",
 };
@@ -33,17 +35,18 @@ const HeroLight = () => {
             <img
               src={`img/hero/${heroContent.heroMobileImage}.jpg`}
               className="img-fluid main-img-mobile d-sm-block d-lg-none"
-              alt="hero man"
+              alt="Kenneth Odoh"
             />
             <h1 className="text-uppercase poppins-font">
-              I'm {heroContent.heroTitleName}.
+            {heroContent.heroTitleName}.
               <span>{heroContent.heroDesignation}</span>
             </h1>
             <p className="open-sans-font">{heroContent.heroDescriptions}</p>
-            <button className="button" onClick={toggleModalOne}>
+            <Link className="button" 
+      to={"/projects"} target="_blank" rel="noreferrer">
               <span className="button-text">{heroContent.heroBtn}</span>
               <span className="button-icon fa fa-arrow-right"></span>
-            </button>
+              </Link>
           </div>
         </div>
       </div>

@@ -1,10 +1,10 @@
 import React from "react";
 
 const achievementsContent = [
-  { title: "12", subTitle1: "years of", subTitle2: "experience" },
-  { title: "97", subTitle1: "completed", subTitle2: "projects" },
-  { title: "81", subTitle1: "Happy", subTitle2: "customers" },
-  { title: "53", subTitle1: "awards", subTitle2: "won" },
+  { icon: "fa-magnet", subTitle1: "inbound", subTitle2: "focused" },
+  { icon: "fa-info-circle", subTitle1: "detail", subTitle2: "oriented" },
+  { icon: "fa-database", subTitle1: "data", subTitle2: "driven" },
+  { icon: "fa-code", subTitle1: "tech", subTitle2: "driven" },
 ];
 
 const Achievements = () => {
@@ -13,7 +13,7 @@ const Achievements = () => {
       {achievementsContent.map((val, i) => (
         <div className="col-6" key={i}>
           <div className="box-stats with-margin">
-            <h3 className="poppins-font position-relative">{val.title}</h3>
+            <h3 className="poppins-font position-relative"><i className={`fa ${val.icon}`}></i></h3>
             <p className="open-sans-font m-0 position-relative text-uppercase">
               {val.subTitle1} <span className="d-block">{val.subTitle2}</span>
             </p>
