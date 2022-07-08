@@ -113,9 +113,9 @@ const HomeDark = () => {
                 {/* Left Side Ends */}
 
                 {/*  Contact Form Starts  */}
-                <div className="col-12 col-lg-8">
+                 <div className="col-12 col-lg-8">
                   <Contact />
-                </div>
+                </div> 
                 {/*  Contact Form Ends */}
               </div>
             </div>

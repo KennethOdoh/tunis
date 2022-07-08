@@ -39,7 +39,7 @@ const index = () => {
               {/* End personal info */}
             </div>
             <div className="col-12 mt-1">
-              <a className="button" href="img/cv.webp" download>
+              <a className="button" href="img/Kenneth_Odoh_Resume.docx" download>
                 <span className="button-text">View Resume</span>
                 <span className="button-icon fa fa-download"></span>
               </a>
@@ -48,9 +48,8 @@ const index = () => {
           </div>
         </div>
         {/*  Personal Info Ends */}
-
-
         <hr className="separator mt-0" />
+
         <div className="col-lg-6 mx-lg-4 mb-0 title-section justify-center">
         <Tabs className="list-unstyled ">
           <TabList className="">

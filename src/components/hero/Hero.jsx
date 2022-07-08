@@ -7,9 +7,9 @@ const heroContent = {
   heroImage: "img/hero/kenneth-hero-dark.png",
   heroMobileImage: "img-mobile",
   heroTitleName: "Kenneth Odoh",
-  heroDesignation: "Digital Marketing Engineer",
+  heroDesignation: "Digital Marketer",
   heroDescriptions: `I help brands develop successful online strategies and manage profitable marketing campaigns.`,
-  heroBtn: "View selected projects.",
+  heroBtn: "View selected projects",
 };
 
 const Hero = () => {

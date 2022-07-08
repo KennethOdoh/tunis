@@ -3,20 +3,39 @@ import { Link } from "react-router-dom";
 
 const previewDemo = [
   {
-    img: "immigration-hub-casestudy",
+    img: "immigration-hub",
     title: "Immigration Hub",
     description: "Setting up an inbound marketing strategy for a travels & immigration brand",
-    routerPath: "https://casestudies.kennethodoh.digital/immigration-hub",
+    routerPath: "https://casestudies.kennethodoh.digital/",
+    tags: "Facebook Ad,",
     delayAnimation: "50",
   },
   {
-    img: "light",
-    title: "Extra Income Tips",
-    description: "How I worked with Extra Income tips to scale up their affiliate brand through funnels and process automation",
-    routerPath: "https://casestudies.kennethodoh.digital/extra-income-tips",
+    img: "data-analysis-kenneth-odoh",
+    title: "Data Analysis with Python",
+    description: "Drawing insights from audience behaviour through data analysis",
+    routerPath: "https://casestudies.kennethodoh.digital/da/hospital-appointment.html",
+    tags: "Data Analysis",
+    delayAnimation: "50",
+  },
+  {
+    img: "amzn-kdp",
+    title: "Amazon KDP",
+    description: "A sales page design and copywriting project",
+    routerPath: "https://johnblessing1501.systeme.io/amazon-kdp",
+    tags: "Landing page",
+    delayAnimation: "50",
+  },
+  {
+    img: "frank-kern",
+    title: "Frank Kern",
+    description: "A redesign of Frank Kern's portfolio website.",
+    routerPath: "https://kennethodoh30.systeme.io/frank/",
+    tags: "Landing page",
     delayAnimation: "50",
   },
 ];
+
 
 const Preview = () => {
   return (
@@ -54,14 +73,9 @@ const Preview = () => {
                   <p>{`${val.description}`}</p>
                   <div className="anchor">
                     <h6>
-                      <Link
-                        className="btn"
-                        to={val.routerPath}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
+                    <a className="btn" href={`${val.routerPath}`} target="_blank" rel="noreferrer">
                         view project
-                      </Link>
+                      </a>
                     </h6>
                   </div>
                 </div>

@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 import Index from "../about/index";
 import { Link } from "react-router-dom";
-import previewDemo from "../../views/Preview";
 
 const heroContent = {
   heroImage: "img/hero/light.jpg",
   heroMobileImage: "img-mobile-light",
   heroTitleName: "Kenneth Odoh",
-  heroDesignation: "Digital marketing Engineer",
+  heroDesignation: "Digital marketer",
   heroDescriptions: `I help brands develop successful online strategies and manage profitable marketing campaigns.`,
   heroBtn: "View selected projects",
 };

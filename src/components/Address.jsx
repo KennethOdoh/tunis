@@ -5,8 +5,7 @@ const Address = () => {
     <>
       <p className="open-sans-font custom-span-contact position-relative">
         <i className="fa fa-map position-absolute"></i>
-        <span className="d-block">Address Point</span>Christantial Villa, Onuiyi Nsukka,
-        Enugu State Nigeria 410002.
+        <span className="d-block">Address Point</span>Enugu State, Nigeria. 410002.
       </p>
       {/* End .custom-span-contact */}
 

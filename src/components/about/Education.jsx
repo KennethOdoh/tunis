@@ -5,7 +5,7 @@ const educationContent = [
     year: "2022",
     degree: "ENGINEERING DEGREE",
     institute: "UNIVERSITY OF NIGERIA",
-    details: `  B.Eng in Electronic Engineering (2nd Class Upper)`,
+    details: `  B.Eng in Electronic Engineering `,
   },
   {
     year: "2022 - present",
