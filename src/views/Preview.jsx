@@ -11,6 +11,14 @@ const previewDemo = [
     delayAnimation: "50",
   },
   {
+    img: "article",
+    title: "Blogs and Articles",
+    description: "Sample marketing blogs, lead magnets, etc.",
+    routerPath: "https://chazedigital.com/blog/",
+    tags: "Articles",
+    delayAnimation: "50",
+  },
+  {
     img: "data-analysis-kenneth-odoh",
     title: "Data Analysis with Python",
     description: "Drawing insights from audience behaviour through data analysis",
@@ -92,7 +100,7 @@ const Preview = () => {
             Liked what you saw?
           </h6>
           <h3 data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
-          I am always open to discussing new projects{" "}
+          I am open to discussing new projects{" "}
             <span className="theme-color">and</span> opportunities to be part of your visions.
           </h3>
           <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
